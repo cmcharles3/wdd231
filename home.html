@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | WDD 231</title>
+    <meta name="description" content="Course home page for WDD 231: Web Frontend Development I.">
+    <meta name="author" content="Your Name">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    
+    <!-- JavaScript -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <!-- SVG logo -->
+            <svg xmlns="images/logo.svg" viewBox="0 0 100 100" width="40" height="40"><circle cx="50" cy="50" r="45" fill="#2c3e50"/><text x="50" y="65" font-size="50" text-anchor="middle" fill="white" font-family="Arial">W</text></svg>
+            <span>Charles Chiparo</span>
+        </div>
+        <button id="menu-btn" aria-label="Toggle Menu">&#9776;</button>
+        <nav id="nav-menu" class="hidden">
+            <a href="home.html" class="active">Home</a>
+            <a href="#">Chamber</a>
+            <a href="#">Final</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+        
+        <div class="top-sections">
+            <section class="about">
+                <h2>About Me</h2>
+                <p>Hello! I am a student in the Software Development degree. This page serves as the home page for my WDD 231 course. I am excited to learn frontend development.</p>
+            </section>
+            <section class="photo">
+                <h2>My Photo</h2>
+                <!-- Optimized image to be < 125kb -->
+                <img src="images/profile.jpg" alt="My Profile Photo" loading="lazy">
+            </section>
+        </div>
+
+        <section class="courses">
+            <h2>Web and Computer Programming Certificate</h2>
+            
+            <div class="filters">
+                <button id="all-btn" class="active">All</button>
+                <button id="wdd-btn">WDD</button>
+                <button id="cse-btn">CSE</button>
+            </div>
+
+            <div id="course-container" class="course-grid"></div>
+            
+            <p id="credits-total">Total Credits: 0</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="https://github.com/cmcharles3" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/charleschiparo" target="_blank">LinkedIn</a>
+            <a href="#" target="_blank">Twitter</a>
+        </div>
+        <div class="copyright">
+            <p>&copy; <span id="currentYear"></span> Charles Chiparo, South Africa</p>
+        </div>
+        <div class="last-modified">
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>
