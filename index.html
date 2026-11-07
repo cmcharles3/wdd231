@@ -1,62 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231: Web Frontend Development I-Charles Chiparo</title>
-    <meta name="description"
-        content="Charles Chiparo's WDD 231: Web Frontend Development I course website featuring professional background, skills, and course project links.">
-    <meta name="author" content="Charles Chiparo">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <title>Home | WDD 231</title>
+    <meta name="description" content="Course home page for WDD 231: Web Frontend Development I.">
+    <meta name="author" content="Your Name">
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/base.css">
-    <script src="scripts/getdates.js" defer></script>
-
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    
+    <!-- JavaScript -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
 <body>
-    <h1>JavaScript Review Exercise</h1>
-<p><a href="https://byui-cse.github.io/wdd231-ww-course/week01/prepare-applied-javascript.html" target="_blank">WDD 231 Learning Activity</a></p>
-<aside></aside>
-<main>
-	<div id="questions">
-		<ol>
-			<li>Change the given date output to this format: mon dd, year.  
-				<em>Example, Apr 04, 2026</em>
-			</li>
-			<li>Replace this concatenated string using a template literal.</li>
-			<li>Declare a variable named quantity and assign it the value of the HTML input element with an id of "<code>q</code>" using the <code>querySelector</code> method.</li>
-			<li>Output this string, "Welcome to <mark>our</mark> neighborhood!", to the first <code>&lt;aside&gt;</code> in the HTML document.</li>
-			<li>Output the returned value of a function named <code>getCelsius</code> to an HTML input element with an <code>id</code> of "<code>temp</code>". Feed the <code>getCelsius</code> literal value of 33 (which represents 33°F). The <code>getCelsius</code> function is already included in the provided.</li>
-			<li>Select all the div elements in a document and assign the result to a <code>const</code> variable named "<code>divs</code>" using <code>querySelectorAll</code>. Output to the provided <code>div</code>	 element with an <code>id</code> of "<code>divs</code>".</li>
-			<li>Filter an array named <code>citynames</code> to return only city names in the array that start with the letter "C" and store the resulting array into a variable named <code>filterC</code>. Output to the provided <code>div</code> element with an <code>id</code> of "<code>c-names</code>".</li>
-		</ol>
+    <header>
+        <img src="images/logo.svg" alt="Site logo" width="48" height="48">
+        <span>Charles Chiparo</span>
+        <button id="menuBtn" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+    </header>
 
-	</div>
-	<div id="output">
-		<div id="today1" class="step-reset step"></div>
-		<div id="today2" class="step"></div>
-		<div class="step">
-			<label for="q"><strong>Quantity</strong>: </label>
-			<input type="text" id="q" size="3" value="44">
-		</div>
-		<div class="step">Output to the first aside element at the top.</div>
-		<div class="step">
-			<label for="temp"><strong>Temperature</strong>: </label>
-			<input type="text" size="3" id="temp" readonly>
-		</div>
-		<div id="divs" class="step"></div>
-		<div id="c-names" class="step"></div>
-	</div>
-</main>
-<aside></aside>
+    <nav id="mainNav">
+        <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="chamber/index.html">Chamber</a></li>
+        <li><a href="final/index.html">Final</a></li>
+        <li><a href="https://byui-cse.github.io/wdd231-ww-course/week01/prepare-applied-javascript.html" target="_blank" rel="noopener">WDD 231 Learning Activity</a></li>
+        </ul>
+    </nav>
 
-<footer>
-	<p>&copy; <span id="year"></span> Charles Chiparo. All rights reserved.</p>
-</footer>
+    <main>
+        <h1>Home</h1>
+        
+        <div class="top-sections">
+            <section class="about">
+                <h2>About Me</h2>
+                <p>Hello! I am a student in the Software Development degree. This page serves as the home page for my WDD 231 course. I am excited to learn frontend development to have a better understanding of web technologies.</p>
+            </section>
+            <section class="photo">
+                <h2>My Photo</h2>
+                <!-- Optimized image to be < 125kb -->
+                <img src="images/profile.jpg" alt="My Profile Photo" loading="lazy">
+            </section>
+        </div>
 
+        <section class="courses">
+            <h2>Web and Computer Programming Certificate</h2>
+            
+            <div class="filters">
+                <button id="all-btn" class="active">All</button>
+                <button id="wdd-btn">WDD</button>
+                <button id="cse-btn">CSE</button>
+            </div>
+
+            <div id="course-container" class="course-grid"></div>
+            
+            <p id="credits-total">Total Credits: 0</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="https://github.com/cmcharles3" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/charleschiparo" target="_blank">LinkedIn</a>
+            <a href="#" target="_blank">Twitter</a>
+        </div>
+        <div class="copyright">
+            <p>&copy; <span id="currentYear"></span> Charles Chiparo, South Africa</p>
+        </div>
+        <div class="last-modified">
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
 </body>
 </html>

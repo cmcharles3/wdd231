@@ -34,6 +34,31 @@ header {
     cursor: pointer;
 }
 
+/* Base styles (small screens) */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li a {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: #5b25ee;
+  text-decoration: none;
+  border-top: 1px solid rgba(255,255,255,0.15);
+}
+
+/* Large screens (media query) */
+@media screen and (min-width: 700px) {
+  nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    padding-bottom: 0.5rem; /* Gives a little space below the flex menu */
+  }
+}
+
 #nav-menu {
     display: flex;
     flex-direction: column;
@@ -74,8 +99,9 @@ h2 {
 
 .photo img {
     width: 20%;
-    height: auto;
+    height: auto;    
     border-radius: 5px;
+    
 }
 
 .filters {

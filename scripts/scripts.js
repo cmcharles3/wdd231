@@ -1,4 +1,4 @@
-// Select the HTML element to manipulate
+// HTML element to manipulate
 const today1 = document.querySelector('#today1');
 const today2 = document.querySelector('#today2');
 const message = document.querySelector('aside');
@@ -11,7 +11,7 @@ function getCelsius(fahrenheit) {
 	return (fahrenheit - 32) * (5/9);
 }
 
-// Set up the Date format object parameter for toLocaleDateString method.
+// Setting up the Date format object parameter for toLocaleDateString method.
 const options = {
 	  month: "short",
 		day: "numeric",
