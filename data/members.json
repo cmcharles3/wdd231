@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Machco Solutions.",
+    "address": "87 Cranbourne Ave, Benoni, 1500, South Africa",
+    "phone": "011 420 1499",
+    "website": "https://machcosolutions.co.za",
+    "image": "machco.png",
+    "membership": 3
+  },
+  {
+    "name": "https://partserve.co.za/",
+    "address": "16 Milkyway Ave, Linbro Business Park, Sandton, 2196, South Africa",
+    "phone": "011 201 7779",
+    "website": "https://partserve.co.za/",
+    "image": "parts.png",
+    "membership": 2
+  },
+  {
+    "name": "Matrix Warehouse Group (Pty) Ltd",
+    "address": "1st Avenue, Mountain View, Benoni, 1501, South Africa",
+    "phone": "0118692613",
+    "website": "https://matrixwarehouse.co.za",
+    "image": "matrix.png",
+    "membership": 1
+  },
+  {
+    "name": "JNS",
+    "address": "42 Derwent Avenue, Farrarmere, Benoni, 1501, South Africa",
+    "phone": "072 155 8210",
+    "website": "https://barcodeprinters.co.za/",
+    "image": "jns.png",
+    "membership": 3
+  },
+  {
+    "name": "HiFiCorp Boksburg",
+    "address": "Shop 1, Eastrand Retail Park, Northrand Rd, Boksburg",
+    "phone": "011 841 4300",
+    "website": "https://www.hificorp.co.za",
+    "image": "hifi.png",
+    "membership": 1
+  },
+  {
+    "name": "Virgin Active",
+    "address": "1st Floor, MontClare Place cnr Main",
+    "phone": "+27 21 180 3566",
+    "website": "https://www.virginactive.co.za",
+    "image": "virgin.png",
+    "membership": 2
+  },
+  {
+    "name": "Highland Fitness",
+    "address": "Cnr of Main Road and, Windemere Dr",
+    "phone": "+2711 918 7424",
+    "website": "https://www.planetfitness.co.za",
+    "image": "planet.png",
+    "membership": 1
+  }
+]

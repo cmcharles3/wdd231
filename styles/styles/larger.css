@@ -1,0 +1,29 @@
+@media screen and (min-width: 700px) {
+  /* ... your existing nav and header rules ... */
+  
+  #directory-container.grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablet */
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #directory-container.grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on desktop */
+  }
+  
+  /* Optional: Make the list view look nicer on desktop */
+  #directory-container.list .member-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+  }
+  #directory-container.list .member-card img {
+    width: 80px;
+  }
+  #directory-container.list .member-card h2 {
+    margin: 0;
+    flex: 1;
+    padding-left: 1rem;
+  }
+}
