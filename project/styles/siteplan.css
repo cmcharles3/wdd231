@@ -1,0 +1,130 @@
+/* CSS Variables for Color Schema */
+:root {
+  --primary-color: #1b4332; /* Deep Forest Green */
+  --secondary-color: #74c69d; /* Mint Green */
+  --background-color: #f4f9f4; /* Very light green/gray */
+  --text-color: #2d3142;
+  --card-bg: #ffffff;
+}
+
+/* Global Styles */
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Typography */
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--primary-color);
+}
+
+h1 {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin: 0;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+h2 {
+  border-bottom: 3px solid var(--secondary-color);
+  padding-bottom: 0.5rem;
+  margin-top: 0;
+}
+
+/* Layout */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem 2rem 3rem;
+}
+
+section {
+  background: var(--card-bg);
+  padding: 1.5rem 2rem;
+  margin-top: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+/* Color Swatches */
+.color-swatch {
+  display: block;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.primary-swatch {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.secondary-swatch {
+  background-color: var(--secondary-color);
+  color: var(--primary-color); /* Dark text for contrast on mint green */
+}
+
+/* Wireframes */
+.wireframe-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+@media (min-width: 700px) {
+  .wireframe-container {
+    flex-direction: row;
+  }
+}
+
+.wireframe {
+  flex: 1;
+  border: 2px dashed #999;
+  padding: 1rem;
+  background: #f0f0f0;
+  border-radius: 8px;
+}
+
+.wireframe h3 {
+  text-align: center;
+  margin-top: 0;
+  color: #555;
+}
+
+.wireframe-mobile {
+  max-width: 300px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.wf-box {
+  background: #ccc;
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #555;
+  border-radius: 4px;
+}
+
+.wf-header { background: #bbb; height: 60px; }
+.wf-nav { background: #ddd; height: 40px; }
+.wf-hero { background: #bbb; height: 100px; }
+.wf-content { display: flex; gap: 0.5rem; }
+.wf-content .wf-box { flex: 1; height: 80px; }
+.wf-footer { background: #bbb; height: 50px; margin-top: 0.5rem; }
+
+/* Utility */
+.highlight {
+  color: var(--secondary-color);
+  font-weight: bold;
+}

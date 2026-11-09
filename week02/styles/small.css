@@ -1,0 +1,79 @@
+/* --- Card Styles --- */
+.view-toggle button {
+  padding: 0.5rem 1.5rem;
+  background: #e0e0e0;
+  border: 1px solid #999;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.view-toggle button.active {
+  background: #1b4332; /* Cedar3 Green */
+  color: white;
+  border: 1px solid #1b4332;
+}
+
+.member-card {
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.card-header {
+  background: #f4f9f4; /* Light green tint */
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.card-header h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #1b4332; /* Cedar3 Green */
+}
+
+.card-header .tagline {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.card-body img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  background: #74c69d; /* Mint green placeholder */
+  border: 1px solid #ccc;
+}
+
+/* --- Footer Styles --- */
+footer {
+  background: #1b4332; /* Cedar3 Green */
+  color: white;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: left;
+}
+
+.footer-social a {
+  background: #74c69d; /* Mint green */
+  color: #1b4332;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-dev p {
+  margin: 0;
+  font-size: 0.85rem;
+}

@@ -3,22 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Directory | Your City Chamber of Commerce</title>
-  
-  <!-- Meta -->
-  <meta name="description" content="Directory of local businesses and members for the Chamber of Commerce.">
+  <title>Directory | Cedar3 Technology</title>
+  <meta name="description" content="Business directory for Cedar3 Technology.">
   <meta name="author" content="Your Name">
 
   <!-- Facebook Meta -->
-  <meta property="og:title" content="Your City Chamber of Commerce Directory">
-  <meta property="og:description" content="Explore our local member businesses.">
-  <meta property="og:image" content="https://yourgithubusername.github.io/wdd231/chamber/images/chamber-hero.jpg">
+  <meta property="og:title" content="Cedar3 Technology Directory">
+  <meta property="og:description" content="Find local businesses and tech partners in our network.">
+  <meta property="og:image" content="https://yourgithubusername.github.io/wdd231/chamber/images/hero.jpg">
   <meta property="og:url" content="https://yourgithubusername.github.io/wdd231/chamber/directory.html">
 
   <!-- Favicon -->
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
-  <!-- Google Fonts (optional, but recommended) -->
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -36,28 +34,30 @@
 <body>
 
   <header>
-    <div class="header-content">
-      <img src="images/logo.svg" alt="Chamber Logo" width="50" height="50">
-      <span>Your City Chamber</span>
+    <div class="header-logo">
+      <!-- Make sure to create a logo.svg for Cedar3 in your images folder! -->
+      <img src="images/logo.svg" alt="Cedar3 Logo" width="50" height="50">
+      <span>Cedar3 Technology</span>
     </div>
     <button id="menuBtn" aria-label="Toggle navigation">&#9776;</button>
   </header>
 
+  <!-- Navigation -->
   <nav id="mainNav">
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="directory.html" class="active">Directory</a></li>
-      <li><a href="discover.html">Discover</a></li>
       <li><a href="join.html">Join</a></li>
+      <li><a href="discover.html">Discover</a></li>
     </ul>
   </nav>
 
   <main>
-    <h1>Member Directory</h1>
+    <h1>Directory</h1>
     
     <div class="view-toggle">
-      <button id="gridViewBtn" aria-label="Grid View" class="active">&#9638;</button>
-      <button id="listViewBtn" aria-label="List View">&#9776;</button>
+      <button id="gridViewBtn" class="active">Grid</button>
+      <button id="listViewBtn">List</button>
     </div>
 
     <!-- The JS will inject member cards here -->
@@ -65,14 +65,26 @@
   </main>
 
   <footer>
-    <div class="footer-info">
-      <p><strong>Your City Chamber of Commerce</strong></p>
-      <p>123 Main Street, Your City</p>
-      <p>info@yourchamber.com | (208) 555-0199</p>
+    <div class="footer-contact">
+      <p><strong>Cedar3 Technology</strong></p>
+      <p>25 Birmingham rd<br>
+         Benoni, 1501<br>
+         info@cedar3tech.com<br>
+         0764847360</p>
     </div>
+    
+    <div class="footer-social">
+      <!-- Icons/svgs -->
+      <a href="#" aria-label="YouTube">▶</a>
+      <a href="#" aria-label="Twitter">🐦</a>
+      <a href="#" aria-label="LinkedIn">in</a>
+    </div>
+    
     <div class="footer-dev">
-      <p>&copy; <span id="currentYear"></span> Charles Chiparo | WDD 231</p>
-      <p id="lastModified"></p>
+      <p>WDD231 Class Project<br>
+         Charles Chiparo<br>
+         &copy; <span id="currentYear"></span> Cedar3 Technology<br>
+         Last Modification: <span id="lastModified"></span></p>
     </div>
   </footer>
 
