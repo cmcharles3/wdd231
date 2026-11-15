@@ -4,13 +4,30 @@
   #directory-container.grid {
     grid-template-columns: repeat(2, 1fr); /* 2 columns on tablet */
   }
+  
+  /* Hero on larger screens */
+.hero-content {
+  padding: 2rem;
 }
+
+.hero-content h1 {
+  font-size: 2rem;
+}
+
+/* Spotlights grid */
+.spotlight-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
 
 @media screen and (min-width: 1000px) {
   #directory-container.grid {
     grid-template-columns: repeat(3, 1fr); /* 3 columns on desktop */
   }
   
+  .spotlight-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
   /* Optional: Make the list view look nicer on desktop */
   #directory-container.list .member-card {
     display: flex;
