@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Application Received | Cedar3 Technology Chamber</title>
+  <meta name="description" content="Thank you for applying to join the Cedar3 Technology Chamber of Commerce.">
+  <meta name="author" content="Charles Chiparo">
+  
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/thankyou.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <div class="header-logo">
+      <img src="images/logo.svg" alt="Cedar3 Logo" width="50" height="50">
+      <span>Cedar3 Technology</span>
+    </div>
+    <button id="menuBtn" aria-label="Toggle navigation">&#9776;</button>
+  </header>
+
+  <nav id="mainNav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="directory.html">Directory</a></li>
+      <li><a href="join.html">Join</a></li>
+      <li><a href="discover.html">Discover</a></li>
+    </ul>
+  </nav>
+
+  <main class="thankyou-main">
+    <section class="thankyou-card">
+      <h1>Thank You for Applying!</h1>
+      <p>We have received your membership application for Cedar3 Technology.</p>
+      
+      <h2>Application Details:</h2>
+      <div id="results-container">
+        <!-- JS will inject results here -->
+      </div>
+      
+      <a href="index.html" class="cta-button" style="margin-top: 1rem; display: inline-block;">Return to Home</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-contact">
+      <p><strong>Cedar3 Technology</strong></p>
+      <p>25 Birmingham Rd<br>Benoni City, 1501<br>info@cedar3tech.com<br>076 484 7360</p>
+    </div>
+    <div class="footer-social">
+      <a href="#" aria-label="YouTube">▶</a>
+      <a href="#" aria-label="Twitter">🐦</a>
+      <a href="#" aria-label="LinkedIn">in</a>
+    </div>
+    <div class="footer-dev">
+      <p>WDD 231 Class Project<br>Charles Chiparo<br>&copy; <span id="currentYear"></span> Cedar3 Technology<br>Last Modification: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+
+</body>
+</html>
