@@ -531,6 +531,6 @@ dialog::backdrop {
   padding: 0;
   background: var(--bg);
   border-radius: 4px;
-  padding: 1rem;
+
 }
 
