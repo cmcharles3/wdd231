@@ -448,10 +448,6 @@ form small {
   border-top: 5px solid var(--primary);
 }
 
-.bronze-card { border-top-color: #cd7f32; }
-.silver-card { border-top-color: #c0c0c0; }
-.gold-card { border-top-color: #ffd700; }
-
 .info-btn {
   background: var(--primary);
   color: white;
@@ -538,14 +534,3 @@ dialog::backdrop {
   padding: 1rem;
 }
 
-.results-list li {
-  margin-bottom: 0.5rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 1px solid #ddd;
-}
-
-.results-list li:last-child {
-  border-bottom: none;
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
