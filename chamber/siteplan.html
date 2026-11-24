@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Title updated to include requested keywords -->
+  <title>Website Planning Document - Discover Cedar3 Technology</title>
+  <meta name="description" content="Website Planning Document for the Cedar3 Technology final project.">
+  <meta name="author" content="Charles Chiparo">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* CSS Variables matching your project's color scheme */
+    :root {
+      --primary-color: #1b4332; /* Deep Forest Green */
+      --secondary-color: #74c69d; /* Mint Green */
+      --background-color: #f4f9f4; /* Very light green/gray */
+      --text-color: #2d3142;
+      --card-bg: #ffffff;
+    }
+
+    /* Global Styles */
+    body {
+      font-family: 'Open Sans', sans-serif;
+      color: var(--text-color);
+      background-color: var(--background-color);
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Typography */
+    h1, h2, h3 {
+      font-family: 'Montserrat', sans-serif;
+      color: var(--primary-color);
+    }
+
+    h1 {
+      text-align: center;
+      padding: 2rem 1rem;
+      margin: 0;
+      background-color: var(--primary-color);
+      color: white;
+    }
+
+    h2 {
+      border-bottom: 3px solid var(--secondary-color);
+      padding-bottom: 0.5rem;
+      margin-top: 0;
+    }
+
+    /* Layout */
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1rem 2rem 3rem;
+    }
+
+    section {
+      background: var(--card-bg);
+      padding: 1.5rem 2rem;
+      margin-top: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    }
+
+    /* Color Swatches */
+    .color-swatch {
+      display: block;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+
+    .primary-swatch {
+      background-color: var(--primary-color);
+      color: white;
+    }
+
+    .secondary-swatch {
+      background-color: var(--secondary-color);
+      color: var(--primary-color); 
+    }
+
+    /* Wireframes */
+    .wireframe-container {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+
+    @media (min-width: 700px) {
+      .wireframe-container {
+        flex-direction: row;
+      }
+    }
+
+    .wireframe {
+      flex: 1;
+      border: 2px dashed #999;
+      padding: 1rem;
+      background: #f0f0f0;
+      border-radius: 8px;
+    }
+
+    .wireframe h3 {
+      text-align: center;
+      margin-top: 0;
+      color: #555;
+    }
+
+    .wireframe-mobile {
+      max-width: 300px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .wf-box {
+      background: #ccc;
+      margin-bottom: 0.5rem;
+      padding: 1rem;
+      text-align: center;
+      font-size: 0.85rem;
+      font-weight: bold;
+      color: #555;
+      border-radius: 4px;
+    }
+
+    .wf-header { background: #bbb; height: 60px; }
+    .wf-nav { background: #ddd; height: 40px; }
+    .wf-hero { background: #bbb; height: 100px; }
+    .wf-content { display: flex; gap: 0.5rem; }
+    .wf-content .wf-box { flex: 1; height: 80px; }
+    .wf-footer { background: #bbb; height: 50px; margin-top: 0.5rem; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Website Planning Document</h1>
+  </header>
+
+  <main>
+    
+    <!-- 1. Site Name -->
+    <section>
+      <h2>Site Name</h2>
+      <p><strong>Name:</strong> Cedar3 Technology</p>
+      <p><strong>Optional Domain:</strong> cedar3tech.com</p>
+      <p><strong>Reasoning:</strong> I chose this name because it establishes a strong, memorable brand identity. The word "Cedar" implies strength and growth, while "3" adds a modern, tech-forward element. It serves as a digital hub for our technology solutions, services, and community resources.</p>
+    </section>
+
+    <!-- 2. Site Purpose -->
+    <section>
+      <h2>Site Purpose</h2>
+      <p>The purpose of the Cedar3 Technology website is to showcase our innovative software and IT solutions. The site will provide detailed information about our services, a portfolio of past projects, and a user-friendly contact form for potential clients to request quotes or technical support.</p>
+    </section>
+
+    <!-- 3. Scenarios -->
+    <section>
+      <h2>Scenarios</h2>
+      <p>These are questions that a target audience member might ask when visiting the site:</p>
+      <ul>
+        <li>What kind of custom software development services does Cedar3 Technology offer for small businesses?</li>
+        <li>How can I contact the Cedar3 support team for urgent IT troubleshooting?</li>
+        <li>Where can I view a portfolio of past projects and read client testimonials?</li>
+      </ul>
+    </section>
+
+    <!-- 4. Color Scheme -->
+    <section>
+      <h2>Color Scheme</h2>
+      <p>I have selected a professional and modern "tech-nature" color palette that will be applied to the site plan and the final project:</p>
+      
+      <div class="color-swatch primary-swatch">
+        Primary Color: #1b4332 (Deep Forest Green)<br>
+        <small>Used for: Main headings, header background, and footer background.</small>
+      </div>
+
+      <div class="color-swatch secondary-swatch">
+        Secondary Color: #74c69d (Mint Green)<br>
+        <small>Used for: Call-to-action buttons, links, and accents (like the line under the h2 tags).</small>
+      </div>
+    </section>
+
+    <!-- 5. Typography -->
+    <section>
+      <h2>Typography</h2>
+      <p>I will use two Google Fonts to establish a clear visual hierarchy:</p>
+      <ul>
+        <li><strong>Montserrat (Sans-Serif):</strong> Used for all headings (h1, h2, h3). It is bold, modern, and grabs attention.</li>
+        <li><strong>Open Sans (Sans-Serif):</strong> Used for paragraph text, lists, and navigation. It is highly readable and clean.</li>
+      </ul>
+    </section>
+
+    <!-- 6. Wireframes -->
+    <section>
+      <h2>Wireframes</h2>
+      <p>Below are black and white structural wireframes for the home page in mobile and desktop views, created using HTML/CSS blocks.</p>
+      
+      <div class="wireframe-container">
+        
+        <!-- Mobile Wireframe -->
+        <div class="wireframe wireframe-mobile">
+          <h3>Mobile View</h3>
+          <div class="wf-box wf-header">Header / Logo</div>
+          <div class="wf-box wf-nav">☰ Menu</div>
+          <div class="wf-box wf-hero">Hero Image / CTA</div>
+          <div class="wf-box wf-box" style="height: auto;">About Cedar3</div>
+          <div class="wf-box wf-box" style="height: auto;">Services (Stacked)</div>
+          <div class="wf-box wf-box" style="height: auto;">Testimonials (Stacked)</div>
+          <div class="wf-box wf-footer">Footer Info</div>
+        </div>
+
+        <!-- Desktop Wireframe -->
+        <div class="wireframe" style="flex: 2;">
+          <h3>Desktop View</h3>
+          <div class="wf-box wf-header">Header / Logo (Left) | Navigation (Right)</div>
+          <div class="wf-box wf-hero">Large Hero Image / Welcome Banner</div>
+          <div class="wf-content">
+            <div class="wf-box">Services Showcase</div>
+            <div class="wf-box">Client Testimonials</div>
+          </div>
+          <div class="wf-content">
+            <div class="wf-box" style="flex:2;">About Cedar3</div>
+            <div class="wf-box" style="flex:1;">Request a Quote</div>
+          </div>
+          <div class="wf-box wf-footer">Footer Info (3 Columns)</div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>
