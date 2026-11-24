@@ -534,3 +534,110 @@ dialog::backdrop {
 
 }
 
+
+
+/* =========================================
+   DISCOVER PAGE STYLES (W05)
+   ========================================= */
+.discover-main {
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Visitor Message */
+.visitor-message {
+  background: var(--secondary);
+  color: var(--primary);
+  padding: 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Base Card Styles */
+.discover-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.discover-card h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: var(--primary);
+}
+
+.discover-card figure {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  overflow: hidden; /* For the hover effect */
+}
+
+.discover-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  display: block;
+  transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition */
+}
+
+.discover-card address {
+  font-style: italic;
+  color: #666;
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.discover-card p {
+  flex-grow: 1; /* Pushes the button to the bottom */
+  font-size: 0.95rem;
+}
+
+.learn-more-btn {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.learn-more-btn:hover {
+  background: var(--secondary);
+  color: var(--primary);
+}
+
+/* Small Screen Grid Layout (320px - 640px) */
+/* We use grid-template-areas to literally draw the layout */
+.discover-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* 1 column */
+  grid-template-areas: 
+    "area-1"
+    "area-2"
+    "area-3"
+    "area-4"
+    "area-5"
+    "area-6"
+    "area-7"
+    "area-8";
+  gap: 1rem;
+}
+
+/* Assign each card to its named area */
+.area-1 { grid-area: area-1; }
+.area-2 { grid-area: area-2; }
+.area-3 { grid-area: area-3; }
+.area-4 { grid-area: area-4; }
+.area-5 { grid-area: area-5; }
+.area-6 { grid-area: area-6; }
+.area-7 { grid-area: area-7; }
+.area-8 { grid-area: area-8; }
