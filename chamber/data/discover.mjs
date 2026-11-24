@@ -37,7 +37,7 @@ export const itemsOfInterest = [
   {
     id: 6,
     name: "Benoni Museum",
-    address: "151 Pretoria Rd, Benoni",
+    address: "151 Elston Ave, Benoni",
     description: "Discover the rich mining and cultural history of the Benoni area.",
     image: "images/museum.webp"
   },
