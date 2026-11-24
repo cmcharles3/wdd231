@@ -7,6 +7,13 @@
   <title>Website Planning Document - Discover Cedar3 Technology</title>
   <meta name="description" content="Website Planning Document for the Cedar3 Technology final project.">
   <meta name="author" content="Charles Chiparo">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	 
+	 <!-- Facebook Open Graph Meta Tags -->
+  <meta property="og:title" content="Website Planning Document - Cedar3 Technology">
+  <meta property="og:description" content="Explore the official website planning document for Cedar3 Technology, outlining the design, color scheme, and layout.">
+  <meta property="og:url" content="https://cmcharles3.github.io/wdd231/project/siteplan.html">
+  <meta property="og:image" content="https://github.com/cmcharles3/wdd231/blob/main/chamber/images/hero.jpg?raw=true">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -66,6 +73,36 @@
       margin-top: 2rem;
       border-radius: 8px;
       box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    }
+	
+	    .siteplan-nav {
+      background-color: var(--secondary-color);
+      padding: 1rem;
+    }
+
+    .siteplan-nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .siteplan-nav a {
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .siteplan-nav a:hover {
+      text-decoration: underline;
+    }
+    
+    /* Ensures scrolling leaves space at the top */
+    section {
+      scroll-margin-top: 1rem;
     }
 
     /* Color Swatches */
@@ -137,16 +174,45 @@
     .wf-hero { background: #bbb; height: 100px; }
     .wf-content { display: flex; gap: 0.5rem; }
     .wf-content .wf-box { flex: 1; height: 80px; }
-    .wf-footer { background: #bbb; height: 50px; margin-top: 0.5rem; }
+    .wf-footer { background: #bbb; height: 50px; margin-top: 0.5rem; 
+	
+	}
+	
+	    footer {
+      background-color: var(--primary-color);
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    footer p {
+      margin: 0.25rem 0;
+      font-size: 0.9rem;
+    }
+	
+	
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Website Planning Document</h1>
+    
   </header>
+  
+    <nav class="siteplan-nav">
+    <ul>
+      <li><a href="#site-name">Site Name</a></li>
+      <li><a href="#site-purpose">Purpose</a></li>
+      <li><a href="#scenarios">Scenarios</a></li>
+      <li><a href="#color-scheme">Colors</a></li>
+      <li><a href="#typography">Typography</a></li>
+      <li><a href="#wireframes">Wireframes</a></li>
+    </ul>
+  </nav>
 
   <main>
+	   <h1>Website Planning Document</h1>
     
     <!-- 1. Site Name -->
     <section>
@@ -236,8 +302,14 @@
 
       </div>
     </section>
+	
 
   </main>
+  
+    <footer>
+    <p>&copy; 2026 Charles Chiparo | Cedar3 Technology Project Plan</p>
+    <p>WDD 231 - Web Frontend Development I</p>
+  </footer>
 
 </body>
 </html>
